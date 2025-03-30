@@ -1,10 +1,23 @@
 import React from 'react'
 
-const Card = () => {
+function Card(){
+  function onButtonClick() {
+    alert("Logged in")
+  }
   return (
     <>
       <div className='login-card'>
-        <button className='login-btn'> Login Now </button>
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter Email Address"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Password"
+        />
+        <button className='login-btn' onClick={onButtonClick}> Login Now </button>
       </div>
     </>
   )
