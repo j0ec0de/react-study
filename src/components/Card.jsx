@@ -2,7 +2,11 @@ import React from 'react'
 
 const Card = () => {
   return (
-    <div>Card</div>
+    <>
+      <div className='login-card'>
+        <button className='login-btn'> Login Now </button>
+      </div>
+    </>
   )
 }
 
