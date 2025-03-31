@@ -78,7 +78,7 @@ button:focus-visible {
   width: 500px;
   height: 400px;
   border: 1px solid rgba(255, 255, 255, 0.238);  
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 20px;
   background-color: #1e1e1e;
 }
@@ -86,4 +86,16 @@ button:focus-visible {
 input {
   padding: 10px;
   margin: 8px;
+  width: 60%;
+}
+
+.login-btn {
+  margin-top: 20px;
+}
+
+.login-btn:hover {
+  transform: scale(1.08);
+  transition: ease-in-out 0.3s;
+  background-color: #ffffff;
+  color: #000000;
 }
