@@ -4,18 +4,23 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #202020;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url('https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Ensures the background covers the full viewport height */
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #000000;
   text-decoration: inherit;
 }
 a:hover {
@@ -101,4 +106,31 @@ input {
   transition: ease-in-out 0.3s;
   background-color: #ffffff;
   color: #000000;
+}
+
+.movie-card {
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.553);
+  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.movie-card:hover {
+  transition: 0.4s ease-in-out;
+  transform: scale(1.07);
+}
+
+.search-input {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 30px;
+}
+
+.search-button {
+  border-radius: 10px;
+  background-color: #535bf29f;
+  border: 0.5px solid black;
 }
