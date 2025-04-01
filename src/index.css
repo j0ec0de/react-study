@@ -76,11 +76,14 @@ button:focus-visible {
   justify-content: center;
   align-items: center;
   width: 500px;
-  height: 400px;
-  border: 1px solid rgba(255, 255, 255, 0.238);  
-  border-radius: 10px;
+  height: 400px;  
   padding: 20px;
-  background-color: #1e1e1e;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 input {

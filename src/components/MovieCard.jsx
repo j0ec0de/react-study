@@ -4,7 +4,7 @@ function MovieCard({movie}) {
 
 
     function onFavouriteClick() {
-        alert("Clicked button")
+        alert(movie.description)
     }
 
     return <div className="movie-card">
@@ -14,6 +14,7 @@ function MovieCard({movie}) {
         </div>
         <div className="movie-info">
             <h3>{movie.title}</h3>
+            <h4> {movie.release_date} </h4>
             <p> {movie.description} </p>
         </div>
     </div>
