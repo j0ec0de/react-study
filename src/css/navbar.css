@@ -1,40 +1,30 @@
 
 .navbar {
     display: flex;
-    width: 500px;
-    gap: 200px;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    position: fixed;
     top: 0;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 4px;
-    height: 40px;
-    margin-bottom: 40px;
-    background-color: rgba(255, 255, 255, 0.216);
-    color: white;
-    padding: 5px;
+    width: 100%;
+    z-index: 1000;
 }
 
-.navbar-brand {
-    background-color: rgb(255, 255, 255);
-    padding: 4px;
-}
 
 .navbar-links{
-    display:inline-block;
-    gap: 30px;
+    display:flex;
+    gap: 20px;
+    
 }
 
 .navbar-links .nav-link{
     padding: 10px;
-    
+    color: rgb(0, 0, 0);
     
 }
 
 
 .nav-link:hover {
     background-color: #535bf29f;
-    color: white;
     transform: scale(1.02);
     transition: 0.3s ease-in-out;
 }

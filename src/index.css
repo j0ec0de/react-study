@@ -11,11 +11,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background-image: url('https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh; /* Ensures the background covers the full viewport height */
 }
 
 a {
@@ -108,10 +103,15 @@ input {
   color: #000000;
 }
 
+.movies-grid {
+  display: flex;
+  flex-direction: row;
+}
+
 .movie-card {
   margin: 30px;
   background: rgba(255, 255, 255, 0.553);
-  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.314);
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
