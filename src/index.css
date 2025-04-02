@@ -15,7 +15,7 @@
 
 a {
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   text-decoration: inherit;
 }
 a:hover {
@@ -103,12 +103,10 @@ input {
   color: #000000;
 }
 
-.movies-grid {
-  display: flex;
-  flex-direction: row;
-}
+
 
 .movie-card {
+  display:inline-block;
   margin: 30px;
   background: rgba(255, 255, 255, 0.553);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.314);
@@ -116,6 +114,9 @@ input {
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+  align-items: center;
+  width: 200px;
+  height:fit-content;
 }
 
 .movie-card:hover {

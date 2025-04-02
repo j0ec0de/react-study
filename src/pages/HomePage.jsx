@@ -1,15 +1,27 @@
 import MovieCard from "../components/MovieCard"
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { searchMovies, getPopularMovies } from "../services/api";
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState('');
+    const [movies, setMovies] = useState([]);
+    const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(true);
 
-    const movies = [
-        {id: 1, title: "John Wick", release_date: "2020", url: "", description: "good movie "},
-        {id: 2, title: "Inception", release_date: "2019", url: ""},
-        {id: 3, title: "Seven", release_date: "2015", url: ""},
-        {id: 4, title: "Iron Man", release_date: "2024", url: ""}        
-    ];
+    useEffect(()=> {
+        const loadPopularMovies = async() => {
+            try{
+                const popularMovies = await getPopularMovies();
+                setMovies(popularMovies)
+            } catch (err) {
+                setError("Failed to load movies...")
+            }
+            finally {
+                setLoading(false)
+            }
+        }
+        loadPopularMovies()
+    }, [])
 
     // state is something where once it's updated,  
     // the component will change and re-render 
