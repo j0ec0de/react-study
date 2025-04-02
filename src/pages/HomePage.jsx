@@ -1,6 +1,7 @@
 import MovieCard from "../components/MovieCard"
 import { useState, useEffect } from "react";
 import { searchMovies, getPopularMovies } from "../services/api";
+import { Toaster } from 'react-hot-toast';
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -34,6 +35,7 @@ function Home() {
 
     return (
         <div className="home">
+            <Toaster position='bottom-center' reverseOrder={false} />
             <form onSubmit={handleSearch} className="search-bar">
                 <input type="text" 
                     placeholder="search for movies..." 

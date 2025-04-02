@@ -1,4 +1,9 @@
+import { useState } from "react"
+
+
 function Favourites () {
+    const [favourite, setFavourite] = useState('')
+
     return(
         <div className="favourites-empty">
             <h2>No favourite movie Yet</h2>
