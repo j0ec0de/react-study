@@ -19,13 +19,14 @@ function Card(){
   return (
     <>
       <div className='login-card'>
-        <h2> React Study Login</h2>
+        <h2>Movie App</h2>
         <input
           type="text"
           name="email"
           value={email}
           placeholder="Enter Email Address"
           onChange={(e) => setEmail(e.target.value)}
+          required='true'
         />
         <input
           type="password"
@@ -33,6 +34,7 @@ function Card(){
           value={password}
           placeholder="Enter Password"
           onChange={(e) => setPassword(e.target.value)}
+          required='true'
         />
         <button className='login-btn' onClick={onButtonClick}> Login Now </button>
       </div>

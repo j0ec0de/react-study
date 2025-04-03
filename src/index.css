@@ -79,17 +79,25 @@ button:focus-visible {
   height: 400px;  
   padding: 20px;
   background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  box-shadow: 0 8px 32px 0 rgba(62, 62, 62, 0.293);
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.login-card h2 {
+  margin-top: 0px;
+}
+
 input {
   padding: 10px;
   margin: 8px;
   width: 60%;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  border: 0.5px solid black;
 }
 
 .login-btn {
